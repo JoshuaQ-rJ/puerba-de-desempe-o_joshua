@@ -93,7 +93,7 @@ def menu():
                     print("not found")
             elif ser ==4:
                 search = str(name())
-                new_statu = str(new_status())                
+                new_statu = str(status())                
                 try:
                     for i in students:
                         if i["name"] == search:
@@ -118,4 +118,3 @@ def menu():
         elif op_1==8:
             print("thanks to use exits correctly...")
             exit()
-menu()

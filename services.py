@@ -93,24 +93,6 @@ def status():
     except ValueError:
         print("invalid options please try again")
         return status()
-def new_status():
-    # and where the news one
-    status_1=["active","inactive"]
-    for i, op in enumerate(status_1, start=1):
-        print(f"{i}- {op}")    
-    try:
-        status1=int(input("please enter the status for your plan: "))
-        if status1<0:
-            print("invalid options please try again")
-            return new_status()
-        elif status1>2:
-            print("invalid options please try again")
-            return new_status()
-        else:
-            return status_1[status1-1]
-    except ValueError:
-        print("invalid options please try again")
-        return new_status()
 def options():
     # i valid the menu options
     try:
