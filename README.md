@@ -1,14 +1,20 @@
 🗂️ performace test- students management systems
 
 A command-line students management system built in Python. It allows users to create, read, search, save, and reload students using a CSV file for persistent storage.
+
 📁 Project Structure
 
 prueba_joshua/
 ├── App.py        #Csv save/load logic
+
 ├── main.py       # place where start the code
+
 ├── menu.py       # Menu and program flow
+
 ├── models.py     # where i import and save the list
+
 ├── services.py   # Input validation functions
+
 └── data/
     └── data.csv    # Persistent storage file
 
