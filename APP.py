@@ -1,6 +1,7 @@
 import csv
 from models import students
 def save_students():
+    #where I create and write in the life .csv
     if not students:
         print("not students register")
     else:
@@ -10,10 +11,12 @@ def save_students():
             write.writerows(students)
 save_students()
 def read_register():
+    #where I read the .csv document and return a list 
     with open("data/data.csv","r",newline="", encoding="utf-8") as read:
         reads=csv.DictReader(read)
         return list(reads)
 def upload_students():
+    # where I put in the list all thinks we are in the .csv
     registers=read_register()
     if len(registers)==0:
         print("no are register, please save and try again")

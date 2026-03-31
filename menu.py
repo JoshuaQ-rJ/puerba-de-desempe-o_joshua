@@ -3,6 +3,7 @@ from models import students
 from APP import *
 import random
 def menu():
+    #where I disployed all the funtions made previusly
     while True:
         option=["create student","list students","search students", "uptade student","delete student","save students", "upload students","exit"]
         print("---welcome to menu---")
@@ -113,8 +114,13 @@ def menu():
             save_students()
             print("clients save correctly")
         elif op_1 ==7:
-            upload_students()
-            print("upload made corectly")
+            counter=0
+            if counter!=0:
+                upload_students()
+                print("upload made corectly")
+                counter+=1
+            else:
+                print("upload made previusly, you can't made again")
         elif op_1==8:
             print("thanks to use exits correctly...")
             exit()

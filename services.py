@@ -140,6 +140,7 @@ def search_1():
         print("de option selected are invalid please try again")
         return search_1()
 def search_id():
+    #where I valid the ID that you want to search the student
     try:
         op_1=int(input("please enter a ID: "))
         if op_1<100:
@@ -154,6 +155,7 @@ def search_id():
         print("the option selected are invalid please try again")
         return search_id()
 def uptade_student():
+    #where I valid the index that you can uptade the student
     print("why index do you want to search?\n1. Name\n2. Age\n3. Grade\n4. status")
     try:
         op_1=int(input("please enter a option: "))
@@ -169,6 +171,7 @@ def uptade_student():
         print("de option selected are invalid please try again")
         return uptade_student()
 def show_students():
+    #where I show the students in the list
     if not students:
         print("not students register")
     else:
